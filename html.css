@@ -1,0 +1,260 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    font: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+head {
+    font-size: 48px;
+}
+html {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: auto;
+}
+footer{
+    
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    position: bottom;
+    border-color: aliceblue;
+    bottom: 0%;
+    text-align: center;
+    font-size: 14px;
+    float: right;
+    margin-top: auto; 
+    padding: 20px; 
+
+}
+button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    
+}
+    button:hover {
+        background-color: rgb(30, 30, 30);
+        zoom: 1;
+    transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+              z-index: 1;
+    transition: 0.5s ease-in-out;
+    }
+    fieldset {
+        border: 2px solid rgb(68, 68, 68);
+        padding: 10px;
+        margin: 20px auto;
+        width: 250px;
+        border-radius: 999px;
+        position: top;
+        top: 0%;
+    }
+     .top-box {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        position: relative;
+        top: 0%;
+        left: 0%;
+        
+    }
+*{
+    margin: 10;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    padding-block-start: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container .bar {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #533f66, #544e5b);
+    box-shadow: 5px 5px 10px #8a1b8a, -5px -5px 10px #523c52;
+}
+.button-container {
+    display: flex;
+     gap: 30px;
+    margin-top: 80px;
+
+}
+.button1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.button1 .dot{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    background: #8e7070;
+    transform: translate(calc(-50px -50%));
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+}
+.button1 .light{
+    position: absolute;
+    width: 180px;
+    height: 140px;
+    bottom: 0;
+    clip-path: polygon(49% 0, 51% 0, 100% 100%, 0 100%);
+    pointer-events: none;
+   opacity: 0;
+    transition: .5s ease-in-out;
+    transition-delay: 0.1s;
+   
+}
+.button1 button1{
+    font-family: inherit;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px ;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+ background: linear-gradient(145deg, #48424e, #242226);
+    box-shadow: 5px 5px 10px #3c2e3c, -5px -5px 10px #3f303f;
+    border: none;
+    color: #ffecec;
+    transition: .5s ease-in-out;
+    transition-delay: 0.25s;
+
+}
+.button1 button i {
+    font-size: 36px;
+}
+.button1 button span{
+    font-size: 14px;
+    font-weight: 600;
+
+}
+.button1:nth-child(1) .light{
+    background: linear-gradient(180deg, var(--color), #65b29250,#f051c600);
+}
+.button1:nth-child(2) .light{
+    background: linear-gradient(180deg, var(--color), #4babc850,#f0832450);
+}
+.button1:nth-child(3) .light{
+    background: linear-gradient(180deg, var(--color), #240b6350,#5e5ef150);
+}
+.button1:nth-child(4) .light{
+    background: linear-gradient(180deg, var(--color), #797c7e50,#4a78a350);
+}
+.button1:nth-child(5) .light{
+    background: linear-gradient(180deg, var(--color), #c0a56150,#53a57250);
+}
+.button1 :hover .light{
+    opacity: 1;
+}
+.button1:hover .dot{
+    background-color: var(--color);
+    box-shadow: 0 0 10px var(--color), 0 0 30px var(--color);
+}
+.button1:hover button{
+    color: var(--color);
+}
+
+.button-link {
+    font-family: inherit;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(145deg, #48424e, #242226);
+    box-shadow: 5px 5px 10px #3c2e3c, -5px -5px 10px #3f303f;
+    border: none;
+    color: #ffecec;
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.25s;
+    text-decoration: none;
+}
+
+.button1:hover .button-link {
+    color: var(--color);
+}
+
+.color-1 {
+    --color: #f05153;
+}
+.color-2 {
+    --color: #f08324;
+}
+.bar { position: relative; }
+
+.bar-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(190, 177, 177);
+}
+.bar:hover {
+    background: linear-gradient(145deg, #533f66, #544e5b);
+    box-shadow: 5px 5px 10px #8a1b8a, -5px -5px 10px #523c52;
+    transform: translateY(-5px);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+/* Responsive rules */
+@media (max-width: 900px) {
+    body { align-items: stretch; }
+    .container { padding-block-start: 8%; padding-left: 16px; padding-right: 16px; }
+    .button-container { gap: 18px; margin-top: 40px; flex-wrap: wrap; justify-content: center; }
+    .button1, .button-link { width: 90px; height: 90px; }
+    .button1 .light { width: 150px; height: 110px; }
+    .bar { height: 44px; }
+    .bar-text { font-size: 13px; }
+}
+
+@media (max-width: 520px) {
+    .top-box { gap: 8px; flex-wrap: wrap; }
+    fieldset { width: auto; padding: 8px; margin: 12px; }
+    header h1 { font-size: 20px; padding: 8px 12px; }
+    .container { padding-block-start: 6%; }
+    .button-container { gap: 12px; margin-top: 28px; }
+    .button1, .button-link { width: 72px; height: 72px; }
+    .button1 .dot { width: 14px; height: 14px; }
+    .button1 .light { width: 120px; height: 90px; }
+    .button1 button i, .button-link i { font-size: 24px; }
+    .button1 button span, .button-link span { font-size: 12px; }
+    footer { font-size: 12px; padding: 12px; }
+}
+
+@media (max-width: 360px) {
+    .button1, .button-link { width: 64px; height: 64px; }
+    .button1 button i, .button-link i { font-size: 20px; }
+}

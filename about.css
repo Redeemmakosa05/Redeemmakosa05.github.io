@@ -1,0 +1,104 @@
+
+/* global reset moved from inline <style> in about.html */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    color:antiquewhite;
+    background-color: black;
+    text-align: center;
+}
+h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    font-weight: bold;
+
+}
+body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+       
+        .about-section {
+            background: rgb(48, 47, 47);
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .skill-tag {
+            background: grey;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    
+}
+    button:hover {
+        background-color: rgb(30, 30, 30);
+        zoom: 1;
+    transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    fieldset {
+        border: 2px solid rgb(68, 68, 68);
+        padding: 10px;
+        margin: 20px auto;
+        width: 250px;
+        border-radius: 999px;
+        position: top;
+        top: 0%;
+    }
+    .top-box {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        position: relative;
+        top: 0%;
+        left: 0%;
+    }
+
+/* Responsive tweaks for about page */
+@media (max-width: 700px) {
+    .container { padding: 24px 16px; }
+    h1 { font-size: 28px; }
+    .skill-tag { padding: 6px 10px; font-size: 13px; }
+    .about-section { padding: 16px; }
+    .top-box { gap: 8px; flex-wrap: wrap; }
+    fieldset { width: auto; margin: 12px; }
+}
+
+@media (max-width: 380px) {
+    h1 { font-size: 22px; }
+    .container { padding: 16px 12px; }
+}
